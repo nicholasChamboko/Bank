@@ -1,0 +1,20 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Bank.csproj
+# Ignore Visual Studio files
+*.suo
+*.user
+*.sln.docstates
+*.csproj.user
+
+# Ignore build output
+bin/
+obj/
+
+# Ignore NuGet packages
+packages/
+
+# Ignore logs
+*.log
