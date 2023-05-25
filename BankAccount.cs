@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bank
 {
-    public class BankAccount
+    public abstract class BankAccount
     {
         //Encapsulation of properties using automatic properties
         public string AccountNumber { get; set; }
@@ -20,11 +20,8 @@ namespace Bank
             Balance = initialBalance;
         }
 
-        public virtual void Deposit(decimal amount)
-        {
-            Balance += amount;
-            Console.WriteLine($"Deposit of {amount} was made into your account: {AccountNumber}");
-        }
+        //Made the method abstract so all derives classes can have their own implimentation of deposit
+        public abstract void Deposit(decimal amount);
 
         public void Withdraw(decimal amount)
         {

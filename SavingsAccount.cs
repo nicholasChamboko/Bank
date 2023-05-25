@@ -20,7 +20,8 @@ namespace Bank
             //Applying Interest before depositing
             decimal interestAmount = Balance * InterestRate / 100;
             Balance += interestAmount;
-            base.Deposit(amount);
+            Balance += amount;
+            
         }
     }
 }
